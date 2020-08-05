@@ -15,10 +15,9 @@ def actualizar(exp, val, visualizar):
         if(exp.valor[len(exp.valor)-1] in op):
             exp.snd = False
         exp.valor = exp.valor[:-1]
-    """elif (val == 'ans'):
-        exp.valor = exp.anterior
-        #print('entre')"""
-        
+    #elif (val == 'ans'):
+    #    exp.valor = exp.anterior
+    #    #print('entre')
     else:
         exp.valor += val
     visualizar.delete(0,END)
